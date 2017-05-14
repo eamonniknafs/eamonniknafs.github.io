@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Peer-to-Peer Visualization</title>
+<script src="processing.js"></script>
+<script type="text/js" language="JavaScript">
+<!--
+//-->
+</script>
+<style type="text/css"><!--
+body {
+	background-color: white;
+}
+h1, p, li {
+	color: black;
+	font-family: SF Mono;
+}
+p, li {
+    color: #626262;
+	max-width: 60em;
+	text-align: left;
+	text-indent: 0px;
+	margin: 0px auto;
+	padding: .5ex 0px 0px 0px;
+}
+    
+
+//-->
+</style>
+<style type="text/css">
+@font-face {
+    font-family: "SF Mono";
+    src: url(/fonts/SFMono-Regular.otf) format("opentype");
+}
+</style>
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/buttons.css">
+</head>
+<body>
+<div style="text-align" center>
+    
+</div>
+<div style="text-align: center;">
+  <h1>Peer-to-Peer File Sharing</h1>
+  <canvas id="processing" datasrc="p2p.js" width="450" height="450"></canvas>
+  
+  <p>In peer-to-peer file sharing, a network or swarm of computers work together to distribute a file, piece by piece. Each computer can get the information it needs, directly from other computers, instead of forcing every computer to download from one server. Each computer connected to the swarm is called a peer. When a computer seeds, it already has a full copy of the file, but it uploads parts of it to benefit the swarm, whereas, when a computer leeches, it has a negative effect on the swarm by downloading a full file and then leaving without seeding, not contributing to the swarm.<br><br></p>
+    
+  <button id=seedButton class="button button-primary button-pill">Add A Seed</button>
+  <button id=peerButton class="button button-action button-pill">Add A Peer</button>
+  <button id=rPeerButton class="button button-caution button-pill">Remove A Peer</button>
+  <button class="button button button-circle" onClick="history.go(0)" VALUE="Refresh"><i class="fa fa-refresh"></i></button>
+  
+</div>
+</body>
+</html>
